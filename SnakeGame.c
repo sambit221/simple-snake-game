@@ -116,7 +116,7 @@ void setup()
 void draw()
 {
 	system("cls");  // alternative of clrscr fxn in dev c++
-	int i,j,k,ch;
+	int i,j,k,ss;
 	for(i=0;i<=height;i++)
 	{
 		for(j=0;j<=width;j++)
@@ -137,7 +137,7 @@ void draw()
 				}
 				else
 				{
-					ch=0;
+					ss=0;
 					for(k=0;k<piece;k++)
 					{
 						if(i==tailx[k] && j==taily[k])
@@ -146,7 +146,7 @@ void draw()
 							ch=1;
 						}
 					}
-					if(ch==0)
+					if(ss==0)
 					printf(" ");
 				}
 			}
